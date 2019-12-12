@@ -40,6 +40,9 @@ body {
   cursor: pointer;
 }
 </style>
+<div id="app">
+            <example-component></example-component>
+        </div>
 <div id="app3">
 <div class="container-fluid">
 
@@ -58,7 +61,7 @@ body {
               <div class="inner">
                 <p>{{$list->title}}</p>
                 <p>{{$list->author}}</p>
-                <textarea name="" id="" cols="40" rows="13">{{$list->content}}</textarea><br>
+                <textarea name="" id="" cols="35" rows="13">{{$list->content}}</textarea><br>
                 <p class="modalClose" serial="#mordal{{$list->id}}">閉じる</p>
               </div>
             </div>

@@ -3,8 +3,9 @@
 <link rel="stylesheet" href="jquery.rateyo.css"/>
 <div class="container" style="margin-top:15px;">
 <style>
+    .form{color:white;}
 </style>
-    <div id="app2">
+    <div id="app2" class="form">
     <form action="" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="form-group">
