@@ -8,9 +8,15 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-//bootstrapvue
+bootstrapvue
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
+
+// //vuetify
+// import Vuetify from 'vuetify'
+// import 'vuetify/dist/vuetify.min.css'
+// import 'material-design-icons-iconfont/dist/material-design-icons.css'
+// Vue.use(Vuetify)
 
 /**
  * The following block of code may be used to automatically register your
@@ -25,7 +31,6 @@ Vue.use(BootstrapVue)
 Vue.component('my-component', require('./components/MyComponent.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -34,4 +39,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',  
+    
 });

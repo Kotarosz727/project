@@ -7,6 +7,8 @@
   <meta name="csrf-token" content="{{ csrf_token() }}"> 
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet"> -->
   <style>
     @media (prefers-color-scheme: dark) {
     body{
@@ -20,14 +22,6 @@
 <div id="app">
 <my-component v-bind:categories="{{ ($categories) }}"></my-component>
 </div>
-<div>
-
-          <!-- @foreach($categories as $category)
-            <a href="/book/category/{{$category->id}}">{{$category->type}}</a>
-            @endforeach
-          <a href="/book/create">新規登録</a>
-          <a href="/book/rate">評価が高い順</a>
-          <a href="/book/regist">登録が新しい順</a> -->
 </div>
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

@@ -71,4 +71,8 @@ class BookController extends Controller
         $lists = DB::select('select * from books where category = ?', [$id]);
         return view('book.index', ["lists"=>$lists]);
     }
+    public function slide (){
+        $lists = Book::all();
+        return view('book.slide', ["lists"=>$lists]);
+    }
 }

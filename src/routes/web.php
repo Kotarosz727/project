@@ -9,5 +9,6 @@ Route::post('book/update', 'BookController@update');
 Route::get('book/rate', 'BookController@rate');
 Route::get('book/regist', 'BookController@regist');
 Route::get('book/category/{id}', 'BookController@category');
-// Route::get('book/slideshow', 'BookController@slideshow');
+// Route::get('book/category/rate/{id}', 'BookController@regist');
+Route::get('book/slide', 'BookController@slide');
 // Route::get('book/create', 'CategoryController@index');

@@ -1842,6 +1842,74 @@ module.exports = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -1854,15 +1922,6 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -66590,7 +66649,122 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [_vm._v("\n      hi\n  ")])
+  return _c(
+    "v-card",
+    { staticClass: "mx-auto", attrs: { "max-width": "500" } },
+    [
+      _c(
+        "v-system-bar",
+        { attrs: { color: "indigo darken-2", dark: "" } },
+        [
+          _c("v-spacer"),
+          _vm._v(" "),
+          _c("v-icon", [_vm._v("mdi-window-minimize")]),
+          _vm._v(" "),
+          _c("v-icon", [_vm._v("mdi-window-maximize")]),
+          _vm._v(" "),
+          _c("v-icon", [_vm._v("mdi-close")])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-toolbar",
+        { attrs: { color: "indigo", dark: "" } },
+        [
+          _c("v-app-bar-nav-icon"),
+          _vm._v(" "),
+          _c("v-toolbar-title", [_vm._v("Discover")]),
+          _vm._v(" "),
+          _c("v-spacer"),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            { attrs: { icon: "" } },
+            [_c("v-icon", [_vm._v("mdi-magnify")])],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-container",
+        { attrs: { fluid: "" } },
+        [
+          _c(
+            "v-row",
+            { attrs: { dense: "" } },
+            _vm._l(_vm.cards, function(card) {
+              return _c(
+                "v-col",
+                { key: card.title, attrs: { cols: card.flex } },
+                [
+                  _c(
+                    "v-card",
+                    [
+                      _c(
+                        "v-img",
+                        {
+                          staticClass: "white--text align-end",
+                          attrs: {
+                            src: card.src,
+                            gradient:
+                              "to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)",
+                            height: "200px"
+                          }
+                        },
+                        [
+                          _c("v-card-title", {
+                            domProps: { textContent: _vm._s(card.title) }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-card-actions",
+                        [
+                          _c("v-spacer"),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            { attrs: { icon: "" } },
+                            [_c("v-icon", [_vm._v("mdi-heart")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            { attrs: { icon: "" } },
+                            [_c("v-icon", [_vm._v("mdi-bookmark")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            { attrs: { icon: "" } },
+                            [_c("v-icon", [_vm._v("mdi-share-variant")])],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            }),
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -66667,6 +66841,10 @@ var render = function() {
                   _vm._v(" "),
                   _c("b-dropdown-item", { attrs: { href: "/book/create" } }, [
                     _vm._v("新規作成")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-dropdown-item", { attrs: { href: "/book/rate" } }, [
+                    _vm._v("評価の高い順")
                   ])
                 ],
                 1
@@ -78841,10 +79019,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); //bootstrapvue
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+bootstrapvue;
 
+Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["default"]); // //vuetify
+// import Vuetify from 'vuetify'
+// import 'vuetify/dist/vuetify.min.css'
+// import 'material-design-icons-iconfont/dist/material-design-icons.css'
+// Vue.use(Vuetify)
 
-Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

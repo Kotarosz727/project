@@ -56,7 +56,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <textarea name="content" id="content" v-model="typedText" cols="90" rows="20"></textarea><br>
+            <textarea name="content" id="content" v-model="typedText" cols="105" rows="20"></textarea><br>
             </div>
             <div class="modal-footer">
                 <p>現在@{{ charaCount }}文字</p>
