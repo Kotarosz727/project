@@ -20,7 +20,7 @@
     "vuex-persistedstate": "^2.7.0"
   },
   "devDependencies": {
-    "axios": "^0.19",
+    "axios": "^0.21",
     "bootstrap": "^4.4.1",
     "cross-env": "^5.2.1",
     "deepmerge": "^4.2.2",
